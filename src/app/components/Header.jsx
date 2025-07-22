@@ -1,9 +1,8 @@
-// components/Header.jsx
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import './Header.css'; // We'll create this next
+import "./Header.css";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +23,7 @@ export default function Header() {
         </Link>
 
         <nav className="desktop-nav">
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <Link key={link.name} href={link.href} className="nav-link">
               {link.name}
             </Link>
@@ -37,12 +36,19 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="mobile-nav">
-          {navLinks.map(link => (
-            <Link key={link.name} href={link.href} onClick={() => setMenuOpen(false)} className="mobile-link">
-              {link.name}
-            </Link>
-          ))}
+        <div className="mobile-nav-fullscreen">
+          <nav className="mobile-nav-menu">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="mobile-link"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
         </div>
       )}
     </header>

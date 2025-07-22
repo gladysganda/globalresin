@@ -250,11 +250,14 @@
 
 .aboutSection,
 .contact .sectionContent {
-    padding: 4rem 1.5rem;
+    padding: 6rem 1.5rem;
     background-color: #ffffff;
     text-align: center;
 }
 
+.products {
+    padding: 6rem 1.5rem;
+}
 .sectionContent {
     max-width: 800px;
     margin: 0 auto;
