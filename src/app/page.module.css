@@ -117,7 +117,8 @@
 
 .products {
     padding: 5rem 1rem;
-    background-color: #c9d1c7;
+    /* background-color: #c9d1c7; */
+    background-color: #fff;
     width: 100%;
     text-align: center;
 }
@@ -149,15 +150,35 @@
 .imageWrapper {
     position: relative;
     overflow: hidden;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
   }
 
 .productImage {
-    height: 300px;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+
+@media (max-width: 900px) {
+    .productsContent {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .productImage{
+        height: 380px;
+        width: 280px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .productsContent {
+      grid-template-columns: 1fr;
+    }
+    .productImage{
+        height: 100%;
+        width: 100%;
+    }
+  }
 
 .productCard:hover .productImage {
     transform: scale(1.05);
@@ -190,7 +211,8 @@
 
 .contact {
     padding: 5rem 1rem;
-    background-color: var(--blue-bg);
+    /* background-color: var(--blue-bg); */
+    background-color: #c9d1c7;
 }
 
 @media (max-width: 768px) {
@@ -202,7 +224,7 @@
 .contactHeading {
     font-family: var(--heading-font);
     font-size: 2rem;
-    color: var(--blue);
+    /* color: var(--blue); */
     margin-bottom: 1rem;
 }
 
@@ -234,9 +256,9 @@
 }
 
 .formButton {
-    background-color: var(--blue);
-    color: white;
-    padding: 0.75rem 1.5rem;
+    background-color: #9b8e9a;
+    color: #000;
+    padding: 0.75rem 2.5rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -247,11 +269,15 @@
     background-color: var(--blue-light);
 }
 
+.aboutSection{
+    background-color: #c9d1c7;
+    padding: 6rem 1.5rem;
+    text-align: center;
+}
 
-.aboutSection,
 .contact .sectionContent {
     padding: 6rem 1.5rem;
-    background-color: #ffffff;
+    background-color: #fff;
     text-align: center;
 }
 

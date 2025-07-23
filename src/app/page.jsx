@@ -29,22 +29,22 @@ export default function Home() {
         </div>
       </section>
 
-    {/* ABOUT SECTION */}
-    <section id="about" className={styles.aboutSection}>
-      <div className={styles.sectionContent}>
-        <h2 className={styles.sectionHeading}>About Us</h2>
-        <div className={styles.sectionUnderline}></div>
-        <p className={styles.sectionText}>
-          Global Resin is a leading Indonesian manufacturer of gum rosin and turpentine, committed to excellence from extraction to export. Our advanced facilities produce over 500 tons of high-quality gum rosin and 125 tons of turpentine monthly, ensuring consistent supply for global industries.
-        </p>
-        <p className={styles.sectionText}>
-          With a deep commitment to sustainability and precision, we refine every batch to exceed industry expectations. Our products stand out for their purity, performance, and dependability—trusted by clients around the world.
-        </p>
-        <a href="/products" className={styles.primaryButton}>
-          View Our Products
-        </a>
-      </div>
-    </section>
+      {/* ABOUT SECTION */}
+      <section id="about" className={styles.aboutSection}>
+        <div className={styles.sectionContent}>
+          <h2 className={styles.sectionHeading}>About Us</h2>
+          <div className={styles.sectionUnderline}></div>
+          <p className={styles.sectionText}>
+            Global Resin is a leading Indonesian manufacturer of gum rosin and turpentine, committed to excellence from extraction to export. Our advanced facilities produce over 500 tons of high-quality gum rosin and 125 tons of turpentine monthly, ensuring consistent supply for global industries.
+          </p>
+          <p className={styles.sectionText}>
+            With a deep commitment to sustainability and precision, we refine every batch to exceed industry expectations. Our products stand out for their purity, performance, and dependability—trusted by clients around the world.
+          </p>
+          <a href="/products" className={styles.primaryButton}>
+            View Our Products
+          </a>
+        </div>
+      </section>
 
 
       {/* PRODUCTS SECTION */}
@@ -58,26 +58,27 @@ export default function Home() {
       >
 
         <div className={styles.productsContent}>
-        <h2 className={styles.sectionHeading}>Our Products</h2>
-        <div className={styles.sectionUnderline}></div>
+          <h2 className={styles.sectionHeading}>Our Products</h2>
+          <div className={styles.sectionUnderline}></div>
           <div
             style={{
               display: 'grid',
               gap: '2rem',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              justifyItems: 'center',
             }}
           >
             {[
               {
                 name: 'Gum Rosin',
-                image: '/assets/resin.jpg',
+                image: '/assets/rosin.png',
               },
               {
                 name: "Global Pine Resin's Turpentine",
-                image: '/assets/turpentine.jpg',
-                },
-              ].map((p, idx) => (
-                <motion.div key={idx} className={styles.productCard}>
+                image: '/assets/turpentine.png',
+              },
+            ].map((p, idx) => (
+              <motion.div key={idx} className={styles.productCard}>
                 <div className={styles.imageWrapper}>
                   <img
                     src={p.image}
@@ -93,13 +94,14 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+      
 
       {/* CONTACT SECTION */}
       <section className={styles.contact}>
         <div className={styles.sectionContent}>
-          <h2 className={styles.contactHeading}>Get in Touch</h2>
+          <h2 className={styles.contactHeading}>Global Resin - Contact Us</h2>
           <p className={styles.contactText}>
-            We’d love to hear from you. Fill out the form below and we’ll get back to you as soon as possible.
+            Contact Global Resin, a gum rosin and turpentine manufacturer for the pine resin business. Our team is ready to answer your questions and supply your needs.
           </p>
           <form className={styles.form}>
             <label className={styles.formLabel}>Name</label>
