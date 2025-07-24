@@ -5,7 +5,7 @@ export default function ProductsPage() {
   return (
     <div className={styles.container}>
       {/* Gum Rosin Section */}
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.sectionDark}`}>
         <div className={styles.contentBlock}>
           <img src="/assets/resin.jpg" alt="Gum Rosin" className={styles.productImage} />
           <div>
@@ -54,8 +54,9 @@ export default function ProductsPage() {
       </section>
 
       {/* Turpentine Section */}
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.sectionLight}`}>
         <div className={styles.contentBlockReverse}>
+        <img src="/assets/turpentine.png" alt="Gum Turpentine" className={styles.productImage} />
           <div>
             <h2>Global Pine Resin's Turpentine</h2>
             <p>
@@ -87,7 +88,7 @@ export default function ProductsPage() {
               </Link>
             </div>
           </div>
-          <img src="/assets/turpentine.png" alt="Gum Turpentine" className={styles.productImage} />
+
         </div>
       </section>
     </div>

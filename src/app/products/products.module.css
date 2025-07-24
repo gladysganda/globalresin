@@ -1,9 +1,16 @@
 .section {
     max-width: 800px;
     text-align: left;
-    padding: 0 2rem;
-    padding-top: 80px;
+    padding: 2rem 2rem;
+  }
+
+  .sectionLight{
+    background-color: #fff;
+  }
+
+  .sectionDark{
     background-color: #c9d1c7;
+    padding-top: 80px;
   }
   
   .section h2 {
