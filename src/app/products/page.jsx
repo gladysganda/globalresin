@@ -20,11 +20,35 @@ export default function ProductsPage() {
               Experience the pinnacle of Gum Rosin excellence with Global Resin. Elevate your products and applications with our premium-grade offering. Trust in our dedication to superior quality, performance, and customer satisfaction.
             </p>
             <div className={styles.buttonGroup}>
-              <a href="#" className={styles.button}>MSDS</a>
-              <a href="https://drive.google.com/file/d/1TsRKlXsBZZ6LbUVbUI-qpabDu0NBX88c/view" className={styles.button} target="_blank">TDS</a>
-              <a href="#" className={styles.button}>COA</a>
-              <Link href="products/gum-rosin" className={styles.button}>Gum Rosin Page</Link>
+              <a
+                href="/MSDS_ROSIN.pdf"
+                className={styles.button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MSDS
+              </a>
+              <a
+                href="/TDS_GSP_ROSIN.pdf"
+                className={styles.button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TDS
+              </a>
+              <a
+                href="/COA_GSP_ROSIN_WW.pdf"
+                className={styles.button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                COA
+              </a>
+              <Link href="/products/gum-rosin" className={styles.button}>
+                Gum Rosin Page
+              </Link>
             </div>
+
           </div>
         </div>
       </section>
@@ -42,10 +66,25 @@ export default function ProductsPage() {
               With Global Pine Resin's Gum Turpentine, you can be confident in its superior quality. We guarantee that our product surpasses expectations, delivering the highest standards of excellence for your specific needs.
             </p>
             <div className={styles.buttonGroup}>
-              <a href="#" className={styles.button}>MSDS</a>
-              <a href="#" className={styles.button}>TDS</a>
-              <a href="#" className={styles.button}>COA</a>
-              <Link href="/products/gum-turpentine" className={styles.button}>Turpentine Page</Link>
+              <a
+                href="/MSDS_GSP_TURPENTINE.pdf"
+                className={styles.button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MSDS
+              </a>
+              <a
+                href="/COA_TURPENTINE.pdf"
+                className={styles.button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                COA
+              </a>
+              <Link href="/products/gum-rosin" className={styles.button}>
+                Gum Turpentine Page
+              </Link>
             </div>
           </div>
           <img src="/assets/turpentine.png" alt="Gum Turpentine" className={styles.productImage} />
