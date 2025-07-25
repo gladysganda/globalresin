@@ -1,57 +1,70 @@
 .section {
-    /* max-width: 800px; */
-    text-align: left;
-    padding: 2rem 2rem;
-    /* min-height: 100vh; */
-  }
+  /* max-width: 800px; */
+  text-align: left;
+  padding: 2rem 3rem;
+  /* min-height: 100vh; */
+  text-align: center;
+}
 
-  .sectionLight{
-    background-color: #fff;
-  }
+.sectionLight {
+  background-color: #fff;
+}
 
-  .sectionDark{
-    background-color: #c9d1c7;
-    padding-top: 80px;
-  }
-  
-  .section h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-  
-  .section p {
-    font-size: 0.9rem;
-    line-height: 1.75;
-    margin-bottom: 1rem;
-    color: #1f2937;
-  }
-  
-  .buttonGroup {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .button {
-    background-color: #1f2937;
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #2563eb;
-  }
-  
-  .productImage {
-    width: 100%;
-    height: 600px;
-    margin: 2rem 0;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
+.sectionDark {
+  background-color: #c9d1c7;
+  padding-top: 80px;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.section p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: #1f2937;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+.productImageWrapper {
+  width: 100%;
+  max-width: 768px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* border: 1px solid #808080; */
+  border-radius: 25px;
+}

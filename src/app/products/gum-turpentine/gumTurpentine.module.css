@@ -1,6 +1,5 @@
 .container {
     padding: 8rem 2rem;
-    /* max-width: 1200px; */
     margin: 0 auto;
     background-color: #c9d1c7;
   }
@@ -35,12 +34,34 @@
   .contentSection ul {
     padding-left: 1.5rem;
   }
+
+  
+  
+  /* .productImage {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+    padding: 2rem;
+  } */
+
+  .productImageWrapper {
+    width: 100%;
+    max-width: 768px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 2rem 0;
+  }
   
   .productImage {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 2rem 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 25px;
   }
   
   .buttonGroup {
@@ -48,6 +69,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
+    
   }
   
   .button {

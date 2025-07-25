@@ -29,11 +29,14 @@ export default function GumTurpentinePage() {
                 </section>
 
                 <section className={styles.contentSection}>
-                    <img
-                        src="/assets/turpentine.png"
-                        alt="Gum Turpentine from Indonesia - Global Resin"
-                        className={styles.productImage}
-                    />
+                    <div className={styles.productImageWrapper}>
+                        <img
+                            src="/assets/turpentine.png"
+                            alt="Gum Turpentine"
+                            className={styles.productImage}
+                            loading="lazy"
+                        />
+                    </div>
 
                     <h2>Applications of Gum Turpentine</h2>
                     <p>
@@ -47,7 +50,7 @@ export default function GumTurpentinePage() {
                     </ul>
 
                     <h2>Why Choose Global Resin?</h2>
-                    <ul>
+                    <ul className="customList">
                         <li>Experienced gum turpentine exporter from Indonesia</li>
                         <li>Monthly production capacity of 125 tons</li>
                         <li>Export-ready with TDS, MSDS, and COA documents</li>

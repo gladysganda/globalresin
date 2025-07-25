@@ -38,11 +38,14 @@ export default function GumRosinPage() {
   return (
     <div className={styles.container}>
       <section className={styles.section}>
-        <img
-          src="/assets/resin.jpg"
-          alt="Gum Rosin"
-          className={styles.productImage}
-        />
+        <div className={styles.productImageWrapper}>
+          <img
+            src="/assets/rosin.png"
+            alt="Gum Rosin"
+            className={styles.productImage}
+            loading="lazy"
+          />
+        </div>
         <h1>Gum Rosin WW Grade Supplier – Global Resin Indonesia</h1>
         <p>
           Global Resin’s <strong>Gum Rosin WW Grade</strong> is a high-purity, semi-transparent resin sourced from sustainably tapped pine trees (<em>Pinus Merkusii</em>) across Sumatra, Indonesia. Known for its pale color and consistent softening point, our gum rosin is ideal for industrial applications requiring performance, stability, and natural adhesion.
