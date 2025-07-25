@@ -213,6 +213,7 @@
     padding: 5rem 1rem;
     /* background-color: var(--blue-bg); */
     background-color: #c9d1c7;
+    scroll-margin-top: 80px;
 }
 
 @media (max-width: 768px) {
@@ -271,8 +272,13 @@
 
 .aboutSection{
     background-color: #c9d1c7;
-    padding: 6rem 1.5rem;
+    padding: 6rem 2.5rem;
     text-align: center;
+    scroll-margin-top: 80px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact .sectionContent {
@@ -283,6 +289,9 @@
 
 .products {
     padding: 6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .sectionContent {
     max-width: 800px;

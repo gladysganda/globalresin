@@ -10,9 +10,9 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "#about" },
+    { name: "About Us", href: "/#about" },
     { name: "Products", href: "/products" },
-    { name: "Contact", href: "/contact-us" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function Header() {
 
         <nav className="desktop-nav">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} className="nav-link">
+            <Link key={link.name} href={link.href} scroll={true} className="nav-link">
               {link.name}
             </Link>
           ))}

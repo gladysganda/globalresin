@@ -1,6 +1,7 @@
 'use client';
 import styles from './page.module.css';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -72,13 +73,17 @@ export default function Home() {
               {
                 name: 'Gum Rosin',
                 image: '/assets/rosin.png',
+                link: '/products/gum-rosin',
+
               },
               {
                 name: "Global Pine Resin's Turpentine",
                 image: '/assets/turpentine.png',
+                link: '/products/gum-turpentine',
               },
             ].map((p, idx) => (
-              <motion.div key={idx} className={styles.productCard}>
+              <Link href={p.link} key={idx} className={styles.productLink}>
+              <motion.div className={styles.productCard}>
                 <div className={styles.imageWrapper}>
                   <img
                     src={p.image}
@@ -90,6 +95,7 @@ export default function Home() {
                   </div>
                 </div>
               </motion.div>
+                      </Link>
             ))}
           </div>
         </div>
@@ -97,7 +103,7 @@ export default function Home() {
       
 
       {/* CONTACT SECTION */}
-      <section className={styles.contact}>
+      <section id="contact" className={styles.contact}>
         <div className={styles.sectionContent}>
           <h2 className={styles.contactHeading}>Global Resin - Contact Us</h2>
           <p className={styles.contactText}>

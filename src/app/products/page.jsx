@@ -83,7 +83,7 @@ export default function ProductsPage() {
               >
                 COA
               </a>
-              <Link href="/products/gum-rosin" className={styles.button}>
+              <Link href="/products/gum-turpentine" className={styles.button}>
                 Gum Turpentine Page
               </Link>
             </div>
