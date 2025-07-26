@@ -3,7 +3,6 @@ import './globals.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-
 import { Arvo, Poppins } from 'next/font/google';
 
 const arvo = Arvo({
@@ -19,8 +18,11 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Global Resin',
-  description: 'Professional Resin Manufacturer Website',
+  title: "Global Resin | Gum Rosin & Turpentine Indonesia",
+  description: "Leading supplier of gum rosin and gum turpentine from Indonesia.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
