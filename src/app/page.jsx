@@ -77,7 +77,7 @@ export default function Home() {
 
               },
               {
-                name: "Global Pine Resin's Turpentine",
+                name: "Gum Turpentine",
                 image: '/assets/turpentine.png',
                 link: '/products/gum-turpentine',
               },

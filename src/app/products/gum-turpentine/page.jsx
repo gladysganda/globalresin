@@ -38,6 +38,7 @@ export default function GumTurpentinePage() {
                         />
                     </div>
 
+                    <div className={styles.contentDescription}>
                     <h2>Applications of Gum Turpentine</h2>
                     <p>
                         Gum Turpentine is a powerful, natural solvent commonly used in:
@@ -49,6 +50,7 @@ export default function GumTurpentinePage() {
                         <li>Inks and insecticides</li>
                     </ul>
 
+
                     <h2>Why Choose Global Resin?</h2>
                     <ul className="customList">
                         <li>Experienced gum turpentine exporter from Indonesia</li>
@@ -56,6 +58,7 @@ export default function GumTurpentinePage() {
                         <li>Export-ready with TDS, MSDS, and COA documents</li>
                         <li>Sustainably sourced pine resin</li>
                     </ul>
+
 
                     <p>
                         With rigorous quality control and an international client base, Global Resin is your
@@ -70,6 +73,7 @@ export default function GumTurpentinePage() {
                         <a href="/COA_TURPENTINE.pdf" target="_blank" className={styles.button}>
                             COA
                         </a>
+                    </div>
                     </div>
                 </section>
             </div>

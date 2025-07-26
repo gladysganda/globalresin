@@ -1,0 +1,44 @@
+.container {
+    padding: 8rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .list {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .list li::before {
+    content: '✔ ';
+    color: green;
+  }
+  
+  .link {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  
