@@ -60,7 +60,7 @@
 }
 
 /* Remove underline when dropdown is open */
-.dropdown-wrapper:hover > .nav-link::after {
+.dropdown-wrapper:hover .dropdown:hover ~ .nav-link::after {
   transform: scaleX(0);
 }
 
