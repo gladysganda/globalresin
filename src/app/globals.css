@@ -74,6 +74,10 @@ body {
   color: var(--foreground);
 }
 
+body{
+  padding-top: 80px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
